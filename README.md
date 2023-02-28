@@ -1,10 +1,10 @@
-# FuDS
+# FuDS (Cardano Fungible Disclosure System)
 
 _A system for financial reporting and disclosures backed by the blockchain for Native Asset token projects on the 
 Cardano blockchain. By Adam K. Dean_
 
 Welcome to FuDS, the Fungible Disclosure System (FuDS) for Cardano Native Assets. The goal of this repository is to
-define a system that easily enables Fungible Token (FT) projects on the Cardano Blockchain to publish data pertaining
+define a system that easily enables Fungible Token (FT) projects [ref: [CIP-26]()] on the Cardano Blockchain to publish data pertaining
 to the project's tokenomics, display, formatting, and supply data for easy consumption by third parties such as
 investors, the public, auditors, explorers, and anyone else who may be interested in project accountability.
 
@@ -33,8 +33,20 @@ A URI and data hash stored in the on-chain registration points to a JSON-formatt
 describes various informational pieces about a project including: formatting and display information, team and investor
 allocation wallets, and funding round raise information.
 
+Financial disclosure statements are included off-chain because in the case of complex projects most likely the dataset
+involved will become large/bloated over time. By publishing a "proof" to the blockchain we can benefit from the
+immutability of the blockchain without bloating the ledger with large-scale documents. Other decentralized or blockchain
+solutions such as IPFS or Arweave are better suited to these use cases and it is recommended that Disclosure Documents
+be published on one of these solutions.
+
 ### Step 3: Host (or Utilize) an Off-Chain Oracle Solution
 
 The first two steps contain mostly "static" information that is unlikely to change or change infrequently. Other
 information about a token project, such as circulating or total supply, may change very frequently and is better suited
 to a traditional API integration rather than being published constantly to the blockchain ledger.
+
+### Step 4: Verify
+
+The final step of the process will be for third parties to independently verify the information provided in the 
+project's self-reporting disclosures. This repository will also aim to provide tools and information for third parties
+to build out their own systems and utilize this data efficiently.
