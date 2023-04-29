@@ -1,4 +1,4 @@
-# FUDS (Cardano Fungible Disclosure System)
+# FUDS (Cardano Financial Updates & Disclosure System)
 
 > **Don't trust. Verify.**
 >
@@ -9,8 +9,8 @@ Cardano blockchain._
 
 **Original Author: Adam K. Dean**
 
-Welcome to FuDS, the Fungible Disclosure System (FUDS) for Cardano Native Assets. The goal of this repository is to
-define a system that easily enables Fungible Token (FT) projects
+Welcome to FUDS, the Financial Updates & Disclosure System (FUDS) for Cardano Native Assets. The goal of this repository
+is to define a system that easily enables Fungible Token (FT) projects
 [ref: [CIP-26](https://github.com/cardano-foundation/CIPs/blob/master/CIP-0026)]
 on the Cardano Blockchain to publish data pertaining to the project's tokenomics, display, formatting, and supply data
 for easy consumption by third parties such as investors, the public, auditors, explorers, and anyone else who may be
