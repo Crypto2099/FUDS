@@ -1,18 +1,18 @@
-# FuDS (Cardano Fungible Disclosure System)
+# FUDS (Cardano Fungible Disclosure System)
 
 > **Don't trust. Verify.**
 >
 > — Crypto Proverb
 
-_A system for financial reporting and disclosures backed by the blockchain for Native Asset token projects on the 
+_A system for financial reporting and disclosures backed by the blockchain for Native Asset token projects on the
 Cardano blockchain._
 
 **Original Author: Adam K. Dean**
 
-Welcome to FuDS, the Fungible Disclosure System (FuDS) for Cardano Native Assets. The goal of this repository is to
-define a system that easily enables Fungible Token (FT) projects 
-[ref: [CIP-26](https://github.com/cardano-foundation/CIPs/blob/master/CIP-0026)] 
-on the Cardano Blockchain to publish data pertaining to the project's tokenomics, display, formatting, and supply data 
+Welcome to FuDS, the Fungible Disclosure System (FUDS) for Cardano Native Assets. The goal of this repository is to
+define a system that easily enables Fungible Token (FT) projects
+[ref: [CIP-26](https://github.com/cardano-foundation/CIPs/blob/master/CIP-0026)]
+on the Cardano Blockchain to publish data pertaining to the project's tokenomics, display, formatting, and supply data
 for easy consumption by third parties such as investors, the public, auditors, explorers, and anyone else who may be
 interested in project accountability.
 
@@ -28,8 +28,9 @@ the disclosure and _verify_ the information provided.
 
 ### Step 1: On-Chain Project Registration
 
-The first step is for token projects to submit an on-chain registration utilizing [CIP-867]() for on-chain, verifiable
-registration of the token project details.
+The first step is for token projects to submit an on-chain registration
+utilizing [CIP-88](https://github.com/cardano-foundation/CIPs/pull/467) for on-chain, verifiable
+registration of the token project information.
 
 ### Step 2: Publishing Financial Disclosures
 
@@ -40,8 +41,11 @@ allocation wallets, and funding round raise information.
 Financial disclosure statements are included off-chain because in the case of complex projects most likely the dataset
 involved will become large/bloated over time. By publishing a "proof" to the blockchain we can benefit from the
 immutability of the blockchain without bloating the ledger with large-scale documents. Other decentralized or blockchain
-solutions such as IPFS or Arweave are better suited to these use cases and it is recommended that Disclosure Documents
+solutions such as IPFS or Arweave are better suited to these use cases, and it is recommended that Disclosure Documents
 be published on one of these solutions.
+
+The financial disclosure document should follow the specification format found
+in [CIP-????](https://github.com/cardano-foundation/CIPs/pull/495).
 
 ### Step 3: Host (or Utilize) an Off-Chain Oracle Solution
 
@@ -51,20 +55,21 @@ to a traditional API integration rather than being published constantly to the b
 
 ### Step 4: Verify
 
-The final step of the process will be for third parties to independently verify the information provided in the 
+The final step of the process will be for third parties to independently verify the information provided in the
 project's self-reporting disclosures. This repository will also aim to provide tools and information for third parties
 to build out their own systems and utilize this data efficiently.
 
 ## Methodology
 
-The FuDS system was inspired by many similarly open-sourced CIPs and components of the Cardano Ecosystem including, but
+The FUDS system was inspired by many similarly open-sourced CIPs and components of the Cardano Ecosystem including, but
 not limited to:
 
 * Cardano Stake Pool Registration + Metadata Certificates
-* [CIP-36](https://github.com/cardano-foundation/CIPs/blob/master/CIP-0036) Catalyst/Voltaire Voter Registration Certificates
+* [CIP-36](https://github.com/cardano-foundation/CIPs/blob/master/CIP-0036) Catalyst/Voltaire Voter Registration
+  Certificates
 * [CIP-26](https://github.com/cardano-foundation/CIPs/blob/master/CIP-0026) Cardano Token Registry
 * [Cardano-Signer](https://github.com/gitmachtl/cardano-signer) Library by Martin Lang
-* [CIP-867]() by Adam K. Dean
+* [CIP-88](https://github.com/cardano-foundation/CIPs/pull/467) by Adam K. Dean
 
 Where possible the metadata published to the Cardano blockchain (in JSON format) is attempted to be kept in a format
 similar/compatible to CBOR notation. The rationale for this is to keep the data payload published to the blockchain as
@@ -73,7 +78,7 @@ of the situation (token projects and data consumers).
 
 ## Copyright
 
-The work herein is published under 
+The work herein is published under
 [Creative Commons Version 4 Attribution License]((https://creativecommons.org/licenses/by/4.0/legalcode)) and is free
 for any use, modification, or publication (commercial or private) as long as attribution to original author(s) is given.
 
